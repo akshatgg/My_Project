@@ -1,0 +1,36 @@
+title,h1{
+    color:rgb(58, 139, 0);
+}
+li{
+    list-style-type:lower-roman;
+}
+.special{
+    color:chocolate;
+    font-size:larger;
+    font-weight: bold;
+}
+li em{
+    color:blue;
+}
+body+h1+hr+h2{
+    font-size: large;
+}
+a:hower{
+    color:blueviolet;
+    text-decoration: brown;
+}
+body+hr+h2+li.special{
+    color:aqua;
+}
+#heading{
+    color:cornflowerblue;
+    background-color:darkblue;
+}
+li[class~='a']{
+    color:fuchsia;
+    font-size: 200%;
+}
+li[class='b']{
+    font-size: 200%;
+    color: magenta;
+}
