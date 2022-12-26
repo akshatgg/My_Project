@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header
+{
+    background-image: url(../image/desert-3288605.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+nav
+{
+ float:right;
+ list-style-type: none;
+}
+nav 
+{
+    display: inline-block;    
+}
+
+nav a
+{
+text-decoration: none;
+color-scheme: rgb(175, 41, 41);
+padding: 5px 20px;
+border: 1px solid rgb(237, 18, 18);
+transition: 0.5s ease;
+}
+nav a:hover
+{
+ background-color: azure;
+ color:black;
+}
