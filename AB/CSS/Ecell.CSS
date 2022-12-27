@@ -5,31 +5,40 @@
 
 header
 {
-    background-image: url(../image/desert-3288605.jpg);
+    
+    background-image: url(../image/wallpaperflare.com_wallpaper.jpg);
     height: 100vh;
     background-size: cover;
     background-position: center;
 }
-nav
+ nav
 {
- float:right;
+ float:left;
  list-style-type: none;
 }
-nav 
+ nav 
 {
     display: inline-block;    
 }
 
-nav a
+ nav a
 {
 text-decoration: none;
-color-scheme: rgb(175, 41, 41);
-padding: 5px 20px;
-border: 1px solid rgb(237, 18, 18);
-transition: 0.5s ease;
+color-scheme: rgb(14, 13, 13);
+padding: 8px 27px;
+border: 1px solid rgb(9, 8, 8);
+transition: 0.9s ease;
 }
 nav a:hover
 {
- background-color: azure;
- color:black;
+ background-color: rgb(20, 177, 177);
+ color:rgb(175, 18, 18);
 }
+
+.logo img
+{
+   float:right;
+   width:200px;
+   height:auto;
+}
+  
