@@ -1,15 +1,18 @@
 *{
     margin: 0;
     padding: 0;
+    font-family: Century Gothic;
 }
 
 header
 {
-    
-    background-image: url(../image/wallpaperflare.com_wallpaper.jpg);
+    background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(../image/wallpaperflare.com_wallpaper.jpg);
     height: 100vh;
     background-size: cover;
     background-position: center;
+}
+header h1{
+    font-size: 50px;
 }
  nav
 {
@@ -23,22 +26,41 @@ header
 
  nav a
 {
-text-decoration: none;
-color-scheme: rgb(14, 13, 13);
-padding: 8px 27px;
-border: 1px solid rgb(9, 8, 8);
-transition: 0.9s ease;
+    color: rgb(20, 20, 20);
+text-decoration:rgb(2, 2, 2);
+color-scheme: rgb(5, 5, 5);
+padding: 10px 30px;
+border: 2px solid rgb(7, 7, 7);
+transition: 0.5s ease;
 }
 nav a:hover
 {
- background-color: rgb(20, 177, 177);
- color:rgb(175, 18, 18);
+ background-color: rgb(148, 155, 152);
+ color:rgb(8, 8, 8);
 }
+
+/* .gradient a{
+    background-color: rgb(219, 231, 231);
+    color:rgb(175, 18, 18);
+} */
 
 .logo img
 {
+    background-color:blacklinear-gradient(rgba(26, 23, 23, 0.5),rgba(0,0,0,0.5));
    float:right;
    width:200px;
    height:auto;
 }
+
+.title h1{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    color:rgb(16, 17, 18);
+    font-size: 100px;
+    
+}
+
+
   
