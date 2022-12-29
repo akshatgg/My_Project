@@ -13,6 +13,7 @@ header
 }
 header h1{
     font-size: 50px;
+    text-decoration:  underline;
 }
  nav
 {
@@ -52,15 +53,49 @@ nav a:hover
    height:auto;
 }
 
-.title h1{
+.title h2{
     position:absolute;
     top:50%;
     left:50%;
     transform:translate(-50%,-50%);
-    color:rgb(16, 17, 18);
-    font-size: 100px;
-    
+    color:rgb(15, 15, 16);
+    font-size: 100px;   
+    text-shadow: 4px 4px rgb(226, 237, 237);
 }
-
+.insta img
+{
+    position:absolute;
+  top:92%;
+  left:84%;
+  width:53px;
+  height:auto;
+}
+.fb img{
+    position:absolute;
+    top:92%;
+    left:88%;
+    width:50px;
+    height:auto; 
+}
+.ln img{
+    position:absolute;
+    top:92%;
+    left:92%;
+    width:60px;
+    height:auto; 
+}
+.twt img{
+    position:absolute;
+    top:92%;
+    left:96%;
+    width:60px;
+    height:auto; 
+}
+.meet a{
+    position: absolute;
+    top: 89%;
+    left:95%;
+    color: black;
+}
 
   
