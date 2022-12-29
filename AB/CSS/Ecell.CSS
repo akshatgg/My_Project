@@ -48,6 +48,7 @@ nav a:hover
 .logo img
 {
     background-color:blacklinear-gradient(rgba(26, 23, 23, 0.5),rgba(0,0,0,0.5));
+    box-shadow: 4px 4px black;
    float:right;
    width:200px;
    height:auto;
@@ -56,10 +57,10 @@ nav a:hover
 .title h2{
     position:absolute;
     top:50%;
-    left:50%;
+    left:58%;
     transform:translate(-50%,-50%);
     color:rgb(15, 15, 16);
-    font-size: 100px;   
+    font-size: 85px;   
     text-shadow: 4px 4px rgb(226, 237, 237);
 }
 .insta img
@@ -94,8 +95,25 @@ nav a:hover
 .meet a{
     position: absolute;
     top: 89%;
-    left:95%;
+    left:94%;
     color: black;
+    font-size:20px;
+}
+.sign img{
+    position: absolute;
+    top: 70%;
+    left:50%;
+    width:110px;
+    height: auto;
+    box-shadow: 1px 1px rgb(235, 232, 222);
+}
+.login img{
+    position: absolute;
+    top: 70%;
+    left:44%;
+    width:110px;
+    height: auto;
+    box-shadow: 1px 1px rgb(235, 232, 222);
 }
 
   
