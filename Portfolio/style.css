@@ -1,4 +1,44 @@
 body{
-    background-color:rgb(120, 220, 220);
+    background-color:rgba(161, 230, 230, 0.564);
     font-family: 'Poppins', sans-serif;
 }
+nav{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin:0;
+   padding:0;
+    
+}
+nav ul{
+    display: flex;
+    gap: 60px;
+    height:10px;
+    width:520px;
+  font-weight: bold;    
+    align-items: center; 
+    margin:0;
+   padding:0;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    margin:0;
+   padding:0;
+}
+input:hover{
+    background-color: aquamarine;
+}
+input{
+    height:25px;
+   margin:0;
+   padding:0;
+}
+  
+
+
+
