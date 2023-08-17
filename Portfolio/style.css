@@ -1,5 +1,5 @@
 body{
-    background-color:rgba(161, 230, 230, 0.564);
+    background-color:rgb(209, 206, 206);
     font-family: 'Poppins', sans-serif;
 }
 nav{
@@ -41,8 +41,14 @@ div{
      margin:0;
    padding:0;
 }
+/* p{  
+    position:absolute;
+    top:100px;
+    left:100px;
+    font-weight:950;
 
-  
+} */
+    
 
 
 
