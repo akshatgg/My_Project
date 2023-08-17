@@ -6,19 +6,18 @@ nav{
     display:flex;
     flex-direction: row;
     justify-content: space-evenly;
-    margin:0;
-   padding:0;
+  
     
 }
 nav ul{
     display: flex;
     gap: 60px;
+    margin-left: 400px;
     height:10px;
     width:520px;
   font-weight: bold;    
     align-items: center; 
-    margin:0;
-   padding:0;
+   
 }
 li{
     list-style: none;
@@ -38,6 +37,11 @@ input{
    margin:0;
    padding:0;
 }
+div{
+     margin:0;
+   padding:0;
+}
+
   
 
 
