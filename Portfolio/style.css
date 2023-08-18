@@ -48,7 +48,17 @@ div{
     font-weight:950;
 
 } */
-    
+    div{
+        position: relative;
+        top:80px;
+        left:100px;
+
+    }
+
+    span{
+        color: rgb(103, 104, 104);
+        font-weight: 900;
+    }
 
 
 

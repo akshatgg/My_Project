@@ -51,32 +51,68 @@
       position: relative;
       top:400px;
       left:830px;
-      transition: opacity 0.3s ease-in-out;
+      
+      animation-play-state:paused;
+
     }
     .img:hover{
-      opacity: 0.5;
+      animation-play-state:running;
+
     }
     .img1{
       position: relative;
       top:400px;
       left:870px;
+      animation-play-state:paused;
+
       /* transition: opacity 0.3s ease-in-out; */
+    }
+    .img1:hover{
+      animation-play-state:running;
+
     }
     .img2{
       position: relative;
       top:400px;
-      left:910px;   
+      left:910px; 
+      animation-play-state:paused;
+  
+    }
+    .img2:hover{
+      animation-play-state:running;
+
     }
     .img3{
       position: relative;
       top:400px;
       left:950px;
+      animation-play-state:paused;
+
+    }
+    .img3:hover{
+      animation-play-state:running;
+
     }
     /* .img4{
       position: relative;
       top:400px;
       left:940px;
     } */
+    .head h1{
+      font-size: 40px;
+      font-weight: 900;
+    }
+    .head p{
+      font-weight:bolder;
+    }
+    .pos{
+      position: absolute;
+      left: 930px;
+      top:510px;
+    }
+    .pos:hover{
+      background-color:rgb(116, 239, 239) ;
+    }
   </style>
 
   <body>
@@ -111,18 +147,24 @@
      height="300"
       width="350"
     
-      />
-      <!-- <i class="fa-sharp fa-solid fa-circle-user fa-2xl"></i> -->
-
-      <!-- <p class="bolds">Hello, I am a <span class="bold">Web</span></p>
-        <p class="dev">Developer</p> -->
+      
+     
      <a href="https://github.com/akshatgg" target="_blank">
         <i class="fa-brands fa-github-alt fa-beat-fade fa-2xl img" ></i>
       </a>
-        <i class="fa-brands fa-linkedin-in fa-beat-fade fa-2xl img1"></i> 
-        <i class="fa-brands fa-twitter fa-beat-fade fa-2xl img2"></i  >
+      <a href="https://www.linkedin.com/feed/" target="blank">
+        <i class="fa-brands fa-linkedin-in fa-beat-fade fa-2xl img1"></i> </a>
+       <a href="https://twitter.com/akshat___30 " target="_blank"><i class="fa-brands fa-twitter fa-beat-fade fa-2xl img2"></i></a> 
           <i class="fa-brands fa-facebook fa-beat-fade fa-2xl img3"></i>
-          <!-- <i class="fa-sharp fa-solid fa-paper-plane fa-beat-fade fa-2xl img4"></i> -->
+          <div class="head">
+          <h1>Hello, I am a <span>Web <br>Developer</span></h1>
+          <p>
+          I am an aspiring<span> Full Stack JavaScript<br>Developer,</span> 
+          <br>
+          who is currently working as<span> a Freelancer </span>  for<br><span>National and International client.</span>
+          </p>
+        </div>
+        <button class="pos">Chat with us</button>
         </header>
   </body>
 </html>
