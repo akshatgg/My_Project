@@ -1,0 +1,29 @@
+
+body{
+    background-image: url(./bg.png) ;
+    background-size: cover;
+    height: 700px;
+    background-attachment: fixed;
+}
+ul{
+    display: flex;
+    justify-content:space-between;
+    justify-items: flex-start;
+
+    /* flex-direction: row; */
+}
+li{
+    list-style: none;
+}
+a{
+    color: aliceblue;
+    text-decoration: none;
+}
+div{
+margin: -10px -10px -10px -10px;
+ padding: 31px 83px;
+  height: 50px;
+
+    
+    background-color: black;
+}
