@@ -23,6 +23,10 @@
         border-radius: 8px;
         cursor: pointer;
     }
+    .size:hover{
+        transform: scale(1.1); /* Increase the scale on hover */
+    /* box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); */
+    }
 
     .list{
         color: aliceblue;
@@ -47,6 +51,9 @@
         border-radius: 8px;
 border: none;
     }
+    .color:hover{
+        transform: scale(1.1);
+    }
     .vertical{
         width:1px;
         height:10px;
@@ -54,6 +61,24 @@ border: none;
         padding-top: 60px;
         background-color: aliceblue;
     }
+
+
+.list-item {
+        
+    opacity: 0.7;
+    transition: transform 0.3s, opacity 0.3s;
+}
+
+.list-item a {
+   
+    color: #f7f4f4;
+    font-size: 16px;
+}
+
+.list-item:hover {
+    transform: scale(1.1);
+    opacity: 2;
+}
 </style>
 <body>
     
@@ -66,11 +91,12 @@ border: none;
             <li class="list-item"><a href="">Technology</a></li>
             <li class="list-item"><a href="">Token</a></li>
             <li class="list-item"><a href="">Contributors</a></li>
-            <li><button class="color">Buy 1 Token</button></li>
+            <li><a href=""><button class="color">Buy 1 Token</button></a></li>
         </ul>
     </div>
     <p><span>Lets build a better<br>tomorrow, together.</span><br>
         <gp>Buy 1 token. Join the DAO. Change the world</gp></p>
-<button class="size">Request Early Acsess</button>
+<a href=""><button class="size">Request Early Acsess</button>
+</a>
     </body>
 </html>
