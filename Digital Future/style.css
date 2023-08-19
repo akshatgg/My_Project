@@ -4,6 +4,7 @@ body{
     background-size: cover;
     height: 700px;
     background-attachment: fixed;
+    overflow: hidden;
 }
 ul{
     display: flex;
@@ -23,7 +24,18 @@ div{
 margin: -10px -10px -10px -10px;
  padding: 31px 83px;
   height: 50px;
-
-    
     background-color: black;
+}
+p span{
+    font-size: 70px;
+}
+p{
+    margin-top:90px;
+    margin-left:400px;
+    color: aliceblue;
+    font-weight: 800;
+}
+gp{
+    margin-left:70px;
+    font-size: 20px;
 }
