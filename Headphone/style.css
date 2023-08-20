@@ -2,3 +2,28 @@ body{
     background-color:black;
     font-family: 'Poppins', sans-serif;
 }
+div{
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+    
+}
+li{
+    text-decoration: none;
+
+    margin-right: 70px;
+    
+}
+li a{
+    text-decoration: none;
+    color: aliceblue;
+    font-weight: 900;
+    font-size: large;
+    
+}
+div ul{
+    display: flex;
+    list-style: none;
+   
+}
+    
