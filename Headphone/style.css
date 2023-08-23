@@ -26,4 +26,19 @@ div ul{
     list-style: none;
    
 }
+ni{
+    display: flex;
+}
+ni p{
+    color: aqua;
+    margin-left: 400px;
+   
+}
+ni h{
+    color: aliceblue;
+    font-size: 40px;
+    margin-left: 240px;
+    font-weight: 600;
+
+}
     
