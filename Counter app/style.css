@@ -1,20 +1,21 @@
 body{
     background-image: url(./madison-bracaglia-fcWAwPKpkTU-unsplash.jpg);
     /* height: 100px; */
-}
-b{
-    
     display: flex;
     justify-content:center;
 }
+
 h{
     font-size: 69px;
     font-weight: 500;
-    margin-left: 600px;
+    margin-left: 300px;
+    margin-bottom:0px;
+
 }
 p1{
     border:2px solid black;
     padding:40px 25px 29px 25px;
+    font-size: 30px;
 
 }
 nav{
@@ -23,8 +24,8 @@ nav{
     /* margin-top: 400px; */
     /* justify-content: space-evenly; */
     position: relative;
-    top: 250px;
-    left: -590px;
+    top: 150px;
+    /* left: px; */
     border: 2px solid rgb(176, 173, 173);
     padding-bottom: 70px;
     padding-left: 70px;
