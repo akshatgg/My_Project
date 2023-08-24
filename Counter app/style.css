@@ -12,10 +12,11 @@ h{
     margin-bottom:0px;
 
 }
-p1{
+span{
     border:2px solid black;
     padding:40px 25px 29px 25px;
     font-size: 30px;
+    display: inline-block;
 
 }
 nav{
