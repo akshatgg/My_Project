@@ -1,58 +1,59 @@
-const cells = document.querySelectorAll('.board li');
-const currentPlayerDisplay = document.querySelector('.current-player');
-const resetButton = document.querySelector('.reset-button');
-let currentPlayer = 'X';
-let gameOver = false;
+document.addEventListener('DOMContentLoaded', () => {
+    const boxes = document.querySelectorAll('.box');
+    const gameInfo = document.querySelector('.gameinfo');
+    const resetButton = document.getElementById('reset');
 
-cells.forEach(cell => {
-    cell.addEventListener('click', handleCellClick);
-});
+    let currentPlayer = 'X';
+    let gameOver = false;
 
-resetButton.addEventListener('click', resetGame);
+    function checkWin() {
+        const lines = [
+            [0, 1, 2], [3, 4, 5], [6, 7, 8], // Rows
+            [0, 3, 6], [1, 4, 7], [2, 5, 8], // Columns
+            [0, 4, 8], [2, 4, 6]            // Diagonals
+        ];
 
-function handleCellClick(e) {
-    const cell = e.target;
+        for (const line of lines) {
+            const [a, b, c] = line;
+            if (boxes[a].textContent && boxes[a].textContent === boxes[b].textContent && boxes[a].textContent === boxes[c].textContent) {
+                return boxes[a].textContent;
+            }
+        }
 
-    if (!gameOver && cell.textContent === '') {
-        cell.textContent = currentPlayer;
-        checkWin();
-        togglePlayer();
+        return null;
     }
-}
 
-function togglePlayer() {
-    currentPlayer = currentPlayer === 'X' ? 'O' : 'X';
-    currentPlayerDisplay.textContent = currentPlayer;
-}
+    function handleClick(event) {
+        const box = event.target;
+        if (!box.textContent && !gameOver) {
+            box.textContent = currentPlayer;
+            const winner = checkWin();
 
-function checkWin() {
-    const winCombos = [
-        [0, 1, 2], [3, 4, 5], [6, 7, 8], // Rows
-        [0, 3, 6], [1, 4, 7], [2, 5, 8], // Columns
-        [0, 4, 8], [2, 4, 6]            // Diagonals
-    ];
-
-    for (const combo of winCombos) {
-        const [a, b, c] = combo;
-        if (cells[a].textContent && cells[a].textContent === cells[b].textContent && cells[a].textContent === cells[c].textContent) {
-            gameOver = true;
-            cells[a].classList.add('win');
-            cells[b].classList.add('win');
-            cells[c].classList.add('win');
-            currentPlayerDisplay.textContent = `Player ${currentPlayer} Wins!`;
-            break;
+            if (winner) {
+                gameInfo.textContent = `${winner} wins!`;
+                gameOver = true;
+            } else if ([...boxes].every(box => box.textContent !== '')) {
+                gameInfo.textContent = "It's a draw!";
+                gameOver = true;
+            } else {
+                currentPlayer = currentPlayer === 'X' ? 'O' : 'X';
+                gameInfo.textContent = `Turn for ${currentPlayer}`;
+            }
         }
     }
-}
 
-function resetGame() {
-    cells.forEach(cell => {
-        cell.textContent = '';
-        cell.classList.remove('win');
+    function resetGame() {
+        boxes.forEach(box => {
+            box.textContent = '';
+        });
+        currentPlayer = 'X';
+        gameOver = false;
+        gameInfo.textContent = `Turn for ${currentPlayer}`;
+    }
+
+    boxes.forEach(box => {
+        box.addEventListener('click', handleClick);
     });
-    currentPlayer = 'X';
-    currentPlayerDisplay.textContent = currentPlayer;
-    gameOver = false;
-}
 
-currentPlayerDisplay.textContent = currentPlayer;
+    resetButton.addEventListener('click', resetGame);
+});
