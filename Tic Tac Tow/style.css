@@ -3,23 +3,24 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        
+        background-color: rgba(128, 128, 128, 0.365);
+        /* background-image:url(./pexels-elīna-arāja-3400795.jpg); */
         margin: 0;
     }
     h5{
         
         margin-left: 650px;
         font-size: 100px;
-        margin-top:-1150px;
+        margin-top:-550px;
         font-weight: 500;
     }
     nav{
-        border: 2px solid black;
+        /* border: 2px solid rgb(248, 244, 244); */
         position: relative;
         top:200px;
          left:-220px;
-         padding:1px 500px 300px 500px;
-         margin-left: -500px;
+         padding:1px 500px 0px 400px;
+         margin-left: -420px;
          
 
     }
@@ -32,7 +33,9 @@ font-size: 50px;
     grid-template-columns: repeat(3, 200px);
 grid-template-rows:200px 200px 200px;
     
-    margin-left: -150px;
+    margin-left: -200px;
+    position: relative;
+    top: -80px;
 
    }
   border li{
@@ -51,12 +54,15 @@ grid-template-rows:200px 200px 200px;
     justify-content: center;
     align-items: center;
     font-size: 80px;
-  
+  /* transition:transform 0.3s, opacity 0.3s ; */
+   }
+   border li:hover{
+    background-color: rgba(128, 128, 128, 0.617);
    }
  
  bor{
     position: relative;
-    top: -500px;
+    top: -560px;
     left: 600px;
  }
  bor span{
@@ -66,8 +72,15 @@ grid-template-rows:200px 200px 200px;
     font-size:30px ;
     border-radius: 20px;
     padding: 10px 50px 10px 50px;
+    transition: transform 0.3s, opacity 0.3s;
+    background-color: rgb(139, 243, 243);
+    color: rgb(206, 18, 18);
  }
-   
+   button:hover{
+    transform:scale(1.1) ;
+    opacity:2;
+    color: rgb(156, 34, 26);
+   }
    
     
     
