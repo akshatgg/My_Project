@@ -54,7 +54,7 @@ grid-template-rows:200px 200px 200px;
     justify-content: center;
     align-items: center;
     font-size: 80px;
-  /* transition:transform 0.3s, opacity 0.3s ; */
+  transition:background-color 0.3s ease ;
    }
    border li:hover{
     background-color: rgba(128, 128, 128, 0.617);
@@ -73,8 +73,8 @@ grid-template-rows:200px 200px 200px;
     border-radius: 20px;
     padding: 10px 50px 10px 50px;
     transition: transform 0.3s, opacity 0.3s;
-    background-color: rgb(139, 243, 243);
-    color: rgb(206, 18, 18);
+    background-color: grey(139, 243, 243);
+    color: rgb(49, 43, 43);
  }
    button:hover{
     transform:scale(1.1) ;
