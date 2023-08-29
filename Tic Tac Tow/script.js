@@ -7,13 +7,15 @@ function changeTurn(){
 return turn ==="X"?"0":X;
 }
 let array=Array.from(boxes);
-array.forEach(e=>{
-e.addEventListener('click',()=>{
+array.forEach(element=>{
+element.addEventListener('click',()=>{
 if(boxtxt.innerText===''){
     boxtxt.innerText=turn;
     winning();
-    changeTurn();
-    
+    turn=changeTurn();
+    if(!gameover()){
+        chance.innerText="Turn for"+turn;
+    }
 
 }
 })
