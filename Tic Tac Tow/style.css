@@ -10,7 +10,7 @@
         
         margin-left: 650px;
         font-size: 100px;
-        margin-top:-400px;
+        margin-top:-450px;
         font-weight: 500;
     }
     nav{
@@ -18,7 +18,7 @@
         position: relative;
         top:200px;
          left:-220px;
-         padding:1px 500px 200px 500px;
+         padding:1px 500px 300px 500px;
          margin-left: -500px;
          
 
@@ -45,19 +45,23 @@ font-size: 50px;
    }
    bor{
     display: flex;  
-    justify-content:space-around;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-top: -210px;
+    margin-left:30px ;
     
    }
-  bor li{
+  bor div{
   border: 1px solid black;
   padding-right:300px ;
   margin-left:-30px ;
-  
+  margin-top: 100px;
   list-style-type: none;
   animation: none;
   transition: none;
   transform: none;
    }
+   
    
     
     
