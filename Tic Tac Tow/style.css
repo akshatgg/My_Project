@@ -10,7 +10,7 @@
         
         margin-left: 650px;
         font-size: 100px;
-        margin-top:-450px;
+        margin-top:-400px;
         font-weight: 500;
     }
     nav{
@@ -18,7 +18,7 @@
         position: relative;
         top:200px;
          left:-220px;
-         padding:1px 500px 600px 500px;
+         padding:1px 500px 200px 500px;
          margin-left: -500px;
          
 
@@ -28,8 +28,35 @@ font-size: 50px;
     }
    ul{
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
         align-items: center;
+   }
+  border li{
+
+    border: 1px solid black;
+    padding-bottom: 300px;
+    position: relative;
+    top: 100px;
+    left: -20px;
+    animation: none;
+    transition: none;
+    transform: none;
+    list-style-type: none;
+   }
+   bor{
+    display: flex;  
+    justify-content:space-around;
+    
+   }
+  bor li{
+  border: 1px solid black;
+  padding-right:300px ;
+  margin-left:-30px ;
+  
+  list-style-type: none;
+  animation: none;
+  transition: none;
+  transform: none;
    }
    
     
