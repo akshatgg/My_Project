@@ -26,19 +26,19 @@
     p{
 font-size: 50px;
     }
-   
+  
    ul{
     display: grid;
     grid-template-columns: repeat(3, 200px);
 grid-template-rows:200px 200px 200px;
-    grid-gap: 10px;
-    margin-left: -100px;
+    
+    margin-left: -150px;
 
    }
   border li{
 
     /* border: 1px solid black; */
-    padding-bottom: 300px;
+    
     position: relative;
     top: 100px;
     left: -20px;
@@ -46,25 +46,27 @@ grid-template-rows:200px 200px 200px;
     transition: none;
     transform: none;
     list-style-type: none;
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 80px;
+  
    }
-   bor{
-    display: flex;  
-    flex-direction: column;
-    justify-content: space-evenly;
-    margin-top: -210px;
-    margin-left:30px ;
-    
-   }
-  bor div{
-  border: 1px solid black;
-  padding-right:300px ;
-  margin-left:-30px ;
-  margin-top: 100px;
-  list-style-type: none;
-  animation: none;
-  transition: none;
-  transform: none;
-   }
+ 
+ bor{
+    position: relative;
+    top: -500px;
+    left: 600px;
+ }
+ bor span{
+    font-size: 40px;
+ }
+ bor button{
+    font-size:30px ;
+    border-radius: 20px;
+    padding: 10px 50px 10px 50px;
+ }
    
    
     
