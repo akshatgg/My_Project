@@ -44,5 +44,12 @@ wins.forEach(function(e){
     }
 })
 }
-
+const re=document.getElementById("reset");
+re.addEventListener('click',()=>{
+    aray.forEach(function(e){
+        if(e.querySelector(".boxtext").innerText !==''){
+            e.querySelector(".boxtext").innerText =""
+        }
+    })
+})
         
