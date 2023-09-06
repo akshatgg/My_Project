@@ -4,3 +4,18 @@ body{
     min-height: 100vh;
     font-family: 'Poppins', sans-serif;
 }
+.container{
+    height: 1000px;
+    width:900px;
+    margin-left: 450px;
+}
+.list{
+
+    display: grid;
+    grid-template-columns: repeat(3,300px);
+border: 2px black;
+}
+.item .imag img{
+    height: 250px;
+}
+
