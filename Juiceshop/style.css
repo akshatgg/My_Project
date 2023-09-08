@@ -23,7 +23,7 @@ grid-gap: 50px;
 .item .imag{
     display: flex;
     justify-content: center;
-    background-image: linear-gradient(to top right,rgb(250, 162, 250),#D499D4);
+    background-image: linear-gradient(to top right,#D89CD1,#D499D4);
 border-radius: 20px;
 }
 .content .title{
@@ -58,7 +58,11 @@ border-radius: 20px;
     transform:scale(1.1) ;
     opacity:2;
     color: rgb(156, 34, 26);
+}
+.content{
+    background-color:#CC64A2;
+    border-radius: 30px;
+    padding-top: 30px;
+    transform: translate(0px,-30px);
 
 }
-
-
