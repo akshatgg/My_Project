@@ -8,14 +8,36 @@ body{
     height: 1000px;
     width:900px;
     margin-left: 650px;
+    margin-top: 100px;
 }
 .list{
 
     display: grid;
     grid-template-columns: repeat(3,300px);
-border: 2px black;
+
+grid-gap: 50px;
 }
 .item .imag img{
-    height: 250px;
+    height: 200px;
 }
-
+.item .imag{
+    display: flex;
+    justify-content: center;
+}
+.content .product{
+    display: flex;
+    justify-content: center;
+}
+.content .details {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+button {
+    background-color:rgb(179, 119, 236);
+    border-radius: 40px;
+    margin-left: 70px;
+    padding:15px 30px 15px 30px;
+    font-size: 20px;
+    
+}
