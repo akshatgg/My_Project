@@ -1,7 +1,7 @@
     let thispage=1;
     let limit=6;
     let list=document.querySelectorAll('.list .item');    
-   
+
     
     function loaditem(){
         let begin=limit*(thispage-1);
