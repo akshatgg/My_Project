@@ -1,44 +1,68 @@
-    let thispage=1;
-    let limit=6;
-    let list=document.querySelectorAll('.list .item');    
+document.addEventListener('DOMContentLoaded', function () {
+    let thispage = 1;
+    const limit = 6;
+    const list = document.querySelectorAll('.list .item');
 
+    function loadItems() {
+        const begin = limit * (thispage - 1);
+        const end = limit * thispage - 1;
 
-    function loaditem(){
-        let begin=limit*(thispage-1);
-        let end=limit*thispage-1;
-        list.forEach((item, key)=>{
-            if(key >= begin && key <= end){
+        list.forEach((item, key) => {
+            if (key >= begin && key <= end) {
                 item.style.display = 'block';
-            }else{
+            } else {
                 item.style.display = 'none';
             }
-        })
+        });
 
-        listpage();
-
+        updatePagination();
     }
 
-loaditem();
+    function updatePagination() {
+        const count = Math.ceil(list.length / limit);
+        const prevButton = document.querySelector('.Previ');
+        const nextButton = document.querySelector('.Nexts');
 
-function listpage(){
-    let count=Math.ceil(list.length/limit)
-    if(thispage!=1){
-        let PREV =document.querySelector('.Previ');
-        PREV.setAttribute('onclick','changet(' +( thispage - 1)+ ')')
-    }
-    for(let i=1;i<=count;i++){
-            let page=document.querySelector('.active');
-            page.setAttribute('onclick',changet('+i+'))
-    }
-     if(thispage!=count){
-        let NEXT=document.querySelector('.Nexts');
-        NEXT.setAttribute('onclick','changet('+(thispage+1)+')')
-    }
-    
-}
+        if (thispage > 1) {
+            prevButton.classList.remove('disabled');
+        } else {
+            prevButton.classList.add('disabled');
+        }
 
-function changet(i){
-    thispage=i;
-    loaditem(); 
+        if (thispage < count) {
+            nextButton.classList.remove('disabled');
+        } else {
+            nextButton.classList.add('disabled');
+        }
+    }
 
-}
+    function changePage(page) {
+        thispage = page;
+        loadItems();
+    }
+
+    loadItems();
+
+    const prevButton = document.querySelector('.Previ');
+    const nextButton = document.querySelector('.Nexts');
+    const pageButtons = document.querySelectorAll('.active');
+
+    prevButton.addEventListener('click', () => {
+        if (thispage > 1) {
+            changePage(thispage - 1);
+        }
+    });
+
+    nextButton.addEventListener('click', () => {
+        const count = Math.ceil(list.length / limit);
+        if (thispage < count) {
+            changePage(thispage + 1);
+        }
+    });
+
+    pageButtons.forEach((button, index) => {
+        button.addEventListener('click', () => {
+            changePage(index + 1);
+        });
+    });
+});
