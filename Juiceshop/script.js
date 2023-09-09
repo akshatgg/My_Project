@@ -2,7 +2,7 @@
     let limit=6;
     let list=document.querySelectorAll('.list .item');    
 
-    
+
     function loaditem(){
         let begin=limit*(thispage-1);
         let end=limit*thispage-1;
@@ -13,7 +13,9 @@
                 item.style.display = 'none';
             }
         })
+
         listpage();
+
     }
 
 loaditem();
@@ -32,9 +34,11 @@ function listpage(){
         let NEXT=document.querySelector('.Nexts');
         NEXT.setAttribute('onclick','changet('+(thispage+1)+')')
     }
-
+    
 }
+
 function changet(i){
     thispage=i;
     loaditem(); 
+
 }
