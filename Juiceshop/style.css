@@ -74,12 +74,34 @@ border-radius: 20px;
 
 .listpage{
     display: grid;
-    grid-template-columns: repeat(3,50px);
+    grid-template-columns: repeat(5,50px);
     grid-gap: 20px;
     text-align: center;
     margin-left: 300px;
     
    
+}
+.Previ{
+    list-style: none;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: inline-block;
+    background-color: #ffffffBD;
+}
+.Previ:hover{
+    background-color:rgb(201, 173, 228);
+
+}
+.Nexts:hover{
+    background-color:rgb(201, 173, 228);
+
+}
+.Nexts{
+    list-style: none;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: inline-block;
+    background-color: #ffffffBD;
 }
 .active{
     list-style: none;
