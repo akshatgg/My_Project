@@ -16,8 +16,8 @@ document.addEventListener('DOMContentLoaded', function () {
         });
 
         updatePagination();
+        
     }
-
     function updatePagination() {
         const count = Math.ceil(list.length / limit);
         const prevButton = document.querySelector('.Previ');

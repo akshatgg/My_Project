@@ -1,5 +1,4 @@
 body{
-    
     background-image: linear-gradient(to top right,#CC64A2,#5c3075);
     min-height: 100vh;
     font-family: 'Poppins', sans-serif;
@@ -19,12 +18,13 @@ grid-gap: 20px;
 }
 .item .imag img{
     height: 250px;
-    transition: transform 0.2s;
-    
+    transition: transform 0.2s; 
 }
+
 .item .imag img:hover{
 transform:translate(0,-50px)
 }
+
 
 .item .imag{
     display: flex;
@@ -33,15 +33,18 @@ transform:translate(0,-50px)
 border-radius: 20px;
 }
 
+
 .content .title{
     display: flex;
     justify-content: center;
 }
+
 .content .details {
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
 .add {
     background-color:rgb(201, 173, 228);
     border-radius: 40px;
@@ -51,6 +54,7 @@ border-radius: 20px;
     transition: transform 0.3s ,opacity 0.3s;
 
 }
+
 .title{
     font-weight:900;
     font-size: 20px;
