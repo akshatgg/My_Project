@@ -25,12 +25,14 @@ grid-gap: 20px;
 .item .imag img:hover{
 transform:translate(0,-50px)
 }
+
 .item .imag{
     display: flex;
     justify-content: center;
     background-image: linear-gradient(to top right,#D89CD1,#D499D4);
 border-radius: 20px;
 }
+
 .content .title{
     display: flex;
     justify-content: center;
