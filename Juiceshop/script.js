@@ -47,6 +47,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const nextButton = document.querySelector('.Nexts');
     const pageButtons = document.querySelectorAll('.active');
 
+    
     prevButton.addEventListener('click', () => {
         if (thispage > 1) {
             changePage(thispage - 1);
